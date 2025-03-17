@@ -6,7 +6,7 @@ const notion = new Client({
 
 export default async (req, res) => {
   if (req.method !== 'POST') {
-    return res.status(405).json({ msg: 'Only POST requests are allowed' });
+    return res.status(405).json({ msg: 'Sólo se permiten solicitudes POST' });
   }
   try {
     const { name, email, subject, message } = JSON.parse(req.body);
@@ -15,7 +15,7 @@ export default async (req, res) => {
         database_id: process.env.NOTION_DATABASE_ID,
       },
       properties: {
-        Name: {
+        Nombre: {
           title: [
             {
               text: {
@@ -25,9 +25,15 @@ export default async (req, res) => {
           ],
         },
         Email: {
-          email,
+          rich_text: [
+            {
+              text: {
+                content: email,
+              },
+            },
+          ],
         },
-        Subject: {
+        Asunto: {
           rich_text: [
             {
               text: {
@@ -36,7 +42,7 @@ export default async (req, res) => {
             },
           ],
         },
-        Message: {
+        Mensaje: {
           rich_text: [
             {
               text: {

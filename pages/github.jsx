@@ -26,10 +26,10 @@ const GithubPage = ({ repos, user }) => {
           <h3 className={styles.username}>{user.login}</h3>
         </div>
         <div>
-          <h3>{user.public_repos} repos</h3>
+          <h3>{user.public_repos} Repositorios</h3>
         </div>
         <div>
-          <h3>{user.followers} followers</h3>
+          <h3>{user.followers} Seguidores</h3>
         </div>
       </div>
       <div className={styles.container}>
@@ -54,17 +54,18 @@ export async function getStaticProps() {
     `https://api.github.com/users/${process.env.NEXT_PUBLIC_GITHUB_USERNAME}`,
     {
       headers: {
-        Authorization: `token ${process.env.GITHUB_API_KEY}`,
+        Authorization: process.env.GITHUB_API_KEY,
       },
     }
   );
   const user = await userRes.json();
+  console.log(user)
 
   const repoRes = await fetch(
     `https://api.github.com/users/${process.env.NEXT_PUBLIC_GITHUB_USERNAME}/repos?per_page=100`,
     {
       headers: {
-        Authorization: `token ${process.env.GITHUB_API_KEY}`,
+        Authorization: process.env.GITHUB_API_KEY,
       },
     }
   );

@@ -1,3 +1,5 @@
+// Proyecto basado en el trabajo de Nombre del Creador Nitin Ranganath - Licencia MIT
+
 import { useEffect, useState } from "react";
 import Layout from "../components/Layout";
 import Head from "../components/Head";
@@ -17,7 +19,7 @@ function MyApp({ Component, pageProps }) {
 
   return (
     <Layout>
-      <Head title={`Nitin Ranganath | ${pageProps.title}`} />
+      <Head title={`Alejo Viviani | ${pageProps.title}`} />
       <Component {...pageProps} />
     </Layout>
   );

@@ -4,22 +4,13 @@ const CustomHead = ({ title }) => {
   return (
     <Head>
       <title>{title}</title>
-      <meta
-        name="description"
-        content="Nitin Ranganath is an avid full stack web developer building websites and applications you'd love to use"
-      />
-      <meta
-        name="keywords"
-        content="nitin ranganath, nitin, ranganath, web developer portfolio, nitin web developer, nitin developer, mern stack, nitin ranganath portfolio, vscode-portfolio"
-      />
-      <meta property="og:title" content="Nitin Ranganath's Portfolio" />
+      <meta property="og:title" content="Alejo Viviani Portfolio" />
       <meta
         property="og:description"
-        content="A full-stack developer building websites that you'd like to use."
+        content="Un desarrollador Full-Stack que crea sitios web que te gustaría usar."
       />
       <meta property="og:image" content="https://imgur.com/4zi5KkQ.png" />
-      <meta property="og:url" content="https://vscode-portfolio.vercel.app" />
-      <meta name="twitter:card" content="summary_large_image" />
+      <meta property="og:url" content="https://alejo-portfolio.vercel.app" />
     </Head>
   );
 };
@@ -27,5 +18,5 @@ const CustomHead = ({ title }) => {
 export default CustomHead;
 
 CustomHead.defaultProps = {
-  title: 'Nitin Ranganath',
+  title: 'Alejo Viviani',
 };

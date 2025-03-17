@@ -25,6 +25,9 @@ const Bottombar = () => {
           <WarningIcon className={styles.icon} />
           <p>0</p>
         </div>
+        <div className={styles.section}>
+          Basado en el proyecto "Nitin Ranganath" (itsnitinr)
+        </div>
       </div>
       <div className={styles.container}>
         <div className={styles.section}>

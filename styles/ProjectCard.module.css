@@ -6,6 +6,10 @@
   cursor: pointer;
 }
 
+.img {
+  border-radius: 5%;
+}
+
 .card:hover {
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
 }

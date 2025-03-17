@@ -5,7 +5,7 @@ import styles from '../styles/ProjectsPage.module.css';
 const ProjectsPage = ({ projects }) => {
   return (
     <>
-      <h3>Stuff I've Built So Far</h3>
+      <h3>Mis proyectos creados hasta ahora!</h3>
       <div className={styles.container}>
         {projects.map((project) => (
           <ProjectCard key={project.id} project={project} />
@@ -19,7 +19,7 @@ export async function getStaticProps() {
   const projects = getProjects();
 
   return {
-    props: { title: 'Projects', projects },
+    props: { title: 'Protectos', projects },
   };
 }
 

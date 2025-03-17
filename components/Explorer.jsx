@@ -6,29 +6,24 @@ import styles from '../styles/Explorer.module.css';
 
 const explorerItems = [
   {
-    name: 'home.jsx',
+    name: 'index.jsx',
     path: '/',
     icon: 'react_icon.svg',
   },
   {
-    name: 'about.html',
+    name: 'acercaDe.html',
     path: '/about',
     icon: 'html_icon.svg',
   },
   {
-    name: 'contact.css',
+    name: 'contactos.css',
     path: '/contact',
     icon: 'css_icon.svg',
   },
   {
-    name: 'projects.js',
+    name: 'projectos.js',
     path: '/projects',
     icon: 'js_icon.svg',
-  },
-  {
-    name: 'articles.json',
-    path: '/articles',
-    icon: 'json_icon.svg',
   },
   {
     name: 'github.md',
@@ -42,7 +37,7 @@ const Explorer = () => {
 
   return (
     <div className={styles.explorer}>
-      <p className={styles.title}>Explorer</p>
+      <p className={styles.title}>Explorador</p>
       <div>
         <input
           type="checkbox"
