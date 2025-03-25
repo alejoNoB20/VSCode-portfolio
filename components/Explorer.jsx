@@ -1,34 +1,34 @@
-import Link from 'next/link';
-import Image from 'next/image';
-import { useState } from 'react';
-import ChevronRight from '../components/icons/ChevronRight';
-import styles from '../styles/Explorer.module.css';
+import Link from "next/link";
+import Image from "next/image";
+import { useState } from "react";
+import ChevronRight from "../components/icons/ChevronRight";
+import styles from "../styles/Explorer.module.css";
 
 const explorerItems = [
   {
-    name: 'index.jsx',
-    path: '/',
-    icon: 'react_icon.svg',
+    name: "index.jsx",
+    path: "/",
+    icon: "react_icon.svg",
   },
   {
-    name: 'acercaDe.html',
-    path: '/about',
-    icon: 'html_icon.svg',
+    name: "sobreMi.html",
+    path: "/about",
+    icon: "html_icon.svg",
   },
   {
-    name: 'contactos.css',
-    path: '/contact',
-    icon: 'css_icon.svg',
+    name: "contactos.css",
+    path: "/contact",
+    icon: "css_icon.svg",
   },
   {
-    name: 'projectos.js',
-    path: '/projects',
-    icon: 'js_icon.svg',
+    name: "projectos.js",
+    path: "/projects",
+    icon: "js_icon.svg",
   },
   {
-    name: 'github.md',
-    path: '/github',
-    icon: 'markdown_icon.svg',
+    name: "github.md",
+    path: "/github",
+    icon: "markdown_icon.svg",
   },
 ];
 
@@ -49,13 +49,13 @@ const Explorer = () => {
         <label htmlFor="portfolio-checkbox" className={styles.heading}>
           <ChevronRight
             className={styles.chevron}
-            style={portfolioOpen ? { transform: 'rotate(90deg)' } : {}}
+            style={portfolioOpen ? { transform: "rotate(90deg)" } : {}}
           />
           Portfolio
         </label>
         <div
           className={styles.files}
-          style={portfolioOpen ? { display: 'block' } : { display: 'none' }}
+          style={portfolioOpen ? { display: "block" } : { display: "none" }}
         >
           {explorerItems.map((item) => (
             <Link href={item.path} key={item.name}>
@@ -65,7 +65,7 @@ const Explorer = () => {
                   alt={item.name}
                   height={18}
                   width={18}
-                />{' '}
+                />{" "}
                 <p>{item.name}</p>
               </div>
             </Link>
