@@ -35,7 +35,7 @@
 .bio {
   width: max-content;
   color: #eee;
-  font-size: 1.5rem;
+  font-size: 22px;
   font-weight: 300;
   margin-bottom: 3rem;
   position: relative;
@@ -199,7 +199,7 @@
     font-size: 2rem;
   }
   .bio {
-    font-size: 1.25rem;
+    font-size: 17px;
     margin-bottom: 2rem;
   }
   .button {
@@ -212,8 +212,8 @@
     position: absolute;
     bottom: 0;
     right: 0;
-    width: 75vw;
-    height: 50vh;
+    width: 70vw;
+    height: 45vh;
     z-index: 1;
   }
 }

@@ -26,7 +26,7 @@ const Bottombar = () => {
           <p>0</p>
         </div>
         <div className={styles.section}>
-          Basado en el proyecto "Nitin Ranganath" (itsnitinr)
+          Basado en "itsnitinr"
         </div>
       </div>
       <div className={styles.container}>

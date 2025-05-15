@@ -51,3 +51,32 @@
   gap: 15px;
   justify-content: center;
 }
+
+/* Phone */
+@media screen and (max-width: 600px) {
+  .foreground {
+    margin: 0;
+  }
+  .name {
+    font-size: 2rem;
+  }
+  .bio {
+    font-size: 17px;
+    margin-bottom: 2rem;
+  }
+  .button {
+    font-size: 1rem;
+  }
+  .outlined {
+    font-size: 1rem;
+  }
+  .cardTitle {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: var(--text-color);
+  }
+}
