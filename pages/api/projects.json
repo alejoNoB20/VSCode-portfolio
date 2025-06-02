@@ -3,7 +3,7 @@
     "id": 1,
     "name": "Wotech",
     "image": "https://res.cloudinary.com/dz2df15nx/image/upload/v1742160200/pa1gxfjmdlcqkzilp64q.png",
-    "description": "Aplicación web de gestión para mejorar la eficacia y eficiencia de una carpintería.,
+    "description": "Aplicación web de gestión para mejorar la eficacia y eficiencia de una carpintería".,
     "tags": ["node", "sequelize", "react", "tailwind"],
     "source_code": "https://github.com/alejoNoB20/WOTECH"
   },
